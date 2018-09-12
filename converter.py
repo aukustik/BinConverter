@@ -29,9 +29,6 @@ class ToBin:
         while(self.value > 1):
             remainder = self.value % 2
             self.value = self.value // 2
-            if (self.value < 2):
-                stack.insert(0, self.value)
-                return
-            else:
-                stack.insert(0, remainder)
+            stack.insert(0, remainder)
+        stack.insert(0, self.value)
         print('Decimal =', stack)
