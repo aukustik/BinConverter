@@ -1,6 +1,12 @@
 from converter import *
 
-print('Input binary:')
+print('Input number:')
 kek = input()
-kekCon = ToDec(kek)
+print('DtB or BtD?:')
+case = {
+    'dtb': ToBin(kek),
+    'btd': ToDec(kek)
+}
+input_data = input()
+kekCon = case[input_data]
 kekCon.convert()
