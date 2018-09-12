@@ -31,4 +31,5 @@ class ToBin:
             self.value = self.value // 2
             stack.insert(0, remainder)
         stack.insert(0, self.value)
-        print('Decimal =', stack)
+        result = ''.join([str(i) for i in stack])
+        print('Bin =', result)
